@@ -1,73 +1,251 @@
-<html> 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles */
 
-<head></head>
-    <body>
 
-        <style>
-
-          body {
-  background-color:dimgray ;
+    /* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #000000;
+  padding: 20px 10px;
 }
 
-p  {
-              color:red;
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-              font-weight: 600;
-              font-style: italic;
-           }
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+  border-radius: 4px;
+}
 
-           ol  {
-              color:blue;
-              font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-              font-weight: 500;
-           }
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 2px;
+  font-weight: bold;
+}
 
-           ul  {
-              color:orange;
-              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-              font-weight: 2000;
-           }
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-           </style>
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
 
-        <h1 style="font-size:60px; color:pink; font-family: sans-serif;">Hey, welcome to my site!</h1>
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
 
-        <p> Some people call me Shaunei. Some people call me Puma. But the most important people, they call me mom. </p>
-        <p>
-        <p>
-        </p>
-
-            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Panther%20tnc_92967555_Full.jpg?crop=0%2C78%2C4000%2C2500&wid=2504&hei=1565&scl=1.597444089456869" alt="Shaunei also known as Puma" style="width:500px;height:320px; border-radius: 35px">
-            <p>
-                <p> 10 facts you may not know about me </p>
-            </p>
-            <ol> 
-                <li>I made the top 5 finalists list in the Radisson Red creative competition when they entered SA - the competition was to design their branded merchandice and cafe packaging - my concept was sustainable sip and go with packaging that could also be repurposed for other things like pot plants, filters, functional accessories like mobile phone holders etc.</li>
-                <li>I have written and published, under an alias, 3 full length (100 000 words) adult erotic romance novels</li>
-                <li>I have won 4 awards in my career history including Administrator of the Year and Creative Newcomer, I have also won 2 awards at Pargo</li>
-                <li>I can move 1 eye ball at a time</li>
-                <li>I have only ever travelled outside of SA once, to Kenya for work</li>
-                <li>I don't watch a lot of TV at all - 2 hours a week would be a lot!</li>
-                <li>I have an ebook library over 6k books - I plan to do a lot of reading when I retire and want to make sure I have a great selection</li>
-                <li>I was a professional belly dancer</li> 
-                <li>I have am allergic to sulphur and avoid alcohol like the plague</li>
-                <li>I used to smoke cigarettes for 12 years - have been off cigarettes for 8 years now</li>
-              </ol>
-
-              <p>
-                <p> 4 of my favourite things in the world </p>
-            </p>
-            <ul> 
-                <li>Pineapple and banana pizza</li>
-                <li>True Crime documentaries</li>
-                <li>Fashion</li>
-                <li>Family</li>
-              </ul>
-
-              <a href="https://www.instagram.com/hellomama_za/"target="_blank">Follow me on Instagram</a>
-        </p>
-    </body>
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
 
 
 
+    body {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+    
+    header {
+      background-color: #cacaca;
+      color: #fff;
+      padding: 1px;
+      text-align: left;
+    }
+    
+    
+    
+    main {
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    img {
+      max-width: 100%;
+      height: fit-content ;
+      margin-bottom: 0px;
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      margin-bottom: 10px;
+    }
+    
+    li {
+      margin-bottom: 5px;
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.block {
+  display: block;
+  width: 15%;
+  border:none ;
+  border-radius: 8px;
+  background-color: #fff222;
+  color: rgb(0, 0, 0);
+  padding: 14px 2px;
+  font-size: 14px;
+  font-weight: lighter;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+  </style>
+</head>
+<body>
+  
+  
+  
+  <div class="header">
+    <a href="https://pargo.co.za/"><img src="Main Pargo logo final yellow transp - 72dpi.png" alt="Pargo Logo" style="width: 100px; height: 100px;">
+    </a>
+    <div class="header-right">
+      <a href="#about"><a href="https://pargo.co.za/about-us/">About Pargo</a>
+      <a href="#contact"><a href="https://pargo.co.za/business-sign-up/">Contact Us</a>
+    </div>
+  </div>
+
+  
+  
+  <main>
+
+        <img src="Parcel.jpeg" alt="Pargo Send" style="width:1070px;height:250px;">
+    
+    <h2>Send Anywhere, Collect Anywhere</h2>
+        
+    <p>
+      Send and receive from over 4000 Pargo Points across South Africa
+    </p>
+
+  
+<button class="block">SEND A PARCEL</button>
+
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Convenient and reliable</li>
+      <li>Real-time tracking</li>
+      <li>Safe and secure storage</li>
+      <li>Flexible drop off and collection times</li>
+    </ul>
+
+<h3>How it works</h3>
+
+<div class="row">
+  <div class="column">
+    <img src="form.png" alt="Create a Pargo Send delivery" style="width:20%">
+    <p> Create a Pargo Send delivery </p>
+  </div>
+  <div class="column">
+    <img src="package-2.png" alt="Select your Pargo Point" style="width:20%">
+       <p> Select your Pargo Point </p>
+  </div>
+  <div class="column">
+    <img src="delivery-2.png" alt="Package and drop off" style="width:20%">
+       <p> Package and drop off </p>
+  </div>
+</div>
+
+
+
+    <h2>Explore Pargo Points</h2>
+
+<p>Find a convenient Pargo Point in a store near you.</p>
+
+<iframe src="https://map.pargo.co.za/?token=uvwNZGSiUypW1GHiTGFZiqWWu2W4s78SwUIEWp10GKogqJKt" 
+style="height:500px;width:600px" 
+title="Find your Pargo Point"></iframe>
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        font-size: medium;
+        border-collapse: collapse;
+        width: 50%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+      <body>
+      
+      <h2>Send and Receive Anywhere in SA from R65</h2>
+      
+      <table>
+        <tr>
+          <td>5kg</td>
+          <td>R65</td>
+        </tr>
+        <tr>
+          <td>10kg</td>
+          <td>R70</td>
+        </tr>
+        <tr>
+          <td>15kg</td>
+          <td>R75</td>
+        </tr>
+      </table>
+    
+    <p>Visit our <a href="https://www.pargo.co.za/">website</a> for more information.</p>
+  </main>
+</body>
 </html>
