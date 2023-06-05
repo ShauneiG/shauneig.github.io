@@ -2,27 +2,29 @@
 <html>
 <head>
   <style>
-    /* CSS styles */
 
+    /* CSS styles */
 
     /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
   background-color: #000000;
   padding: 20px 10px;
+  margin: auto; 
 }
 
 /* Style the header links */
 .header a {
   float: left;
   color: rgb(255, 255, 255);
-  text-align: center;
+  text-align: left;
   padding: 12px;
   text-decoration: none;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 25px;
   border-radius: 4px;
+  
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -67,6 +69,7 @@
       margin: 0;
       padding: 0;
       text-align: left;
+      
     }
     
     header {
@@ -84,6 +87,12 @@
     
     h1 {
       color: #333;
+    }
+
+    h3 {
+      color: #333;
+      font-weight: bold;
+      padding-bottom: 10px;
     }
     
     img {
@@ -111,7 +120,8 @@
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 1px;
+  padding-bottom: 10px;
 }
 
 /* Clearfix (clear floats) */
@@ -142,6 +152,31 @@
 }
 
 
+table {
+        font-family: arial, sans-serif;
+        font-size: medium;
+        border-collapse: collapse;
+        width: 40%;
+        align-content: center;
+        align-self: center;
+        align-items: center;
+  
+
+      }
+      
+      td, th {
+        border: 1px solid #f3f3f3;
+        text-align: center;
+        padding: 12px;
+      
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f0f0f0;
+        padding-bottom: 20px;
+      }
+
+
 
   </style>
 </head>
@@ -150,7 +185,7 @@
   
   
   <div class="header">
-    <a href="https://pargo.co.za/"><img src="Main Pargo logo final yellow transp - 72dpi.png" alt="Pargo Logo" style="width: 100px; height: 100px;">
+    <a href="https://pargo.co.za/"><img src="logo.png" alt="Pargo Logo" style="width: 100px; height: 100px;">
     </a>
     <div class="header-right">
       <a href="#about"><a href="https://pargo.co.za/about-us/">About Pargo</a>
@@ -166,9 +201,7 @@
     
     <h2>Send Anywhere, Collect Anywhere</h2>
         
-    <p>
-      Send and receive from over 4000 Pargo Points across South Africa
-    </p>
+    <p style="margin-bottom:25px">Ultimate convenience, delivered to over 4000 Pargo Points across South Africa.</p>
 
   
 <button class="block">SEND A PARCEL</button>
@@ -185,67 +218,54 @@
 
 <div class="row">
   <div class="column">
-    <img src="form.png" alt="Create a Pargo Send delivery" style="width:20%">
+    <img src="form.png" alt="Create a Pargo Send delivery" style="width:100px;height:100px">
     <p> Create a Pargo Send delivery </p>
   </div>
   <div class="column">
-    <img src="package-2.png" alt="Select your Pargo Point" style="width:20%">
+    <img src="package-2.png" alt="Select your Pargo Point" style="width:100px;height:100px">
        <p> Select your Pargo Point </p>
   </div>
   <div class="column">
-    <img src="delivery-2.png" alt="Package and drop off" style="width:20%">
+    <img src="delivery-2.png" alt="Package and drop off" style="width:100px;height:100px">
        <p> Package and drop off </p>
   </div>
 </div>
 
 
-
     <h2>Explore Pargo Points</h2>
 
-<p>Find a convenient Pargo Point in a store near you.</p>
+<p style="margin-bottom:25px">Find a convenient Pargo Point in a store near you.</p>
+
 
 <iframe src="https://map.pargo.co.za/?token=uvwNZGSiUypW1GHiTGFZiqWWu2W4s78SwUIEWp10GKogqJKt" 
 style="height:500px;width:600px" 
 title="Find your Pargo Point"></iframe>
 
-    <style>
-      table {
-        font-family: arial, sans-serif;
-        font-size: medium;
-        border-collapse: collapse;
-        width: 50%;
-      }
       
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-      </style>
-      <body>
-      
-      <h2>Send and Receive Anywhere in SA from R65</h2>
+      <h2 style="margin-bottom:20px;margin-top:30px;">Send and Receive Anywhere in SA from R65</h2>
       
       <table>
         <tr>
           <td>5kg</td>
           <td>R65</td>
+          <td>Buy Now</td>
         </tr>
         <tr>
           <td>10kg</td>
           <td>R70</td>
+          <td>Buy Now</td>
         </tr>
         <tr>
           <td>15kg</td>
           <td>R75</td>
+          <td>Buy Now</td>
         </tr>
       </table>
-    
-    <p>Visit our <a href="https://www.pargo.co.za/">website</a> for more information.</p>
+     
+    <p style="margin-top: 35px;margin-bottom: 40px;">Visit our <a href="https://www.pargo.co.za/">website</a> for more information.</p>
+    <p>
+
+    </p>
   </main>
 </body>
 </html>
